@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: google_route
+          uri: http://google.com
+          predicates:
+            - Path=/search
+        - id: unknown_route
+          uri: http://localhost:8888/
+          predicates:
+            - Path=/unknown/**
+          filters:
+            - RewritePath=/unknown/(?<segment>.*),/unknown_api/$\{segment}
+
+management:
+  endpoint:
+    info:
+      enabled: true
