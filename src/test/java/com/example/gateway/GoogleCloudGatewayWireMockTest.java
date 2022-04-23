@@ -14,7 +14,7 @@ import java.util.Optional;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-class GoogleCloudGatewayWireMockTest {
+class SpringCloudGatewayWireMockTest {
 
     static WireMockServer mockServer;
 

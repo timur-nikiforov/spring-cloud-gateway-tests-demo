@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GoogleCloudGatewayApplication {
+public class SpringCloudGatewayApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(GoogleCloudGatewayApplication.class, args);
+		SpringApplication.run(SpringCloudGatewayApplication.class, args);
 	}
 
 }

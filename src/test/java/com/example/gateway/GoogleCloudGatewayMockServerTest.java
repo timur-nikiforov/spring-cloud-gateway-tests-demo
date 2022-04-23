@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 import static org.mockserver.model.HttpResponse.response;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-class GoogleCloudGatewayMockServerTest {
+class SpringCloudGatewayMockServerTest {
 
     static ClientAndServer mockServer;
 

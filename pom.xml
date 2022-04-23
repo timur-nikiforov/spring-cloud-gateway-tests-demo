@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>google-cloud-gateway</artifactId>
+	<artifactId>spring-cloud-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>google-cloud-gateway</name>
+	<name>spring-cloud-gateway</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
