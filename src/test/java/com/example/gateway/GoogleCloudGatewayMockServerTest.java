@@ -1,10 +1,12 @@
 package com.example.gateway;
 
 import org.assertj.core.api.Assertions;
-import org.junit.AfterClass;
+
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mockserver.client.server.MockServerClient;
+
+import org.mockserver.client.MockServerClient;
 import org.mockserver.integration.ClientAndServer;
 import org.mockserver.matchers.Times;
 import org.mockserver.model.Header;
@@ -27,7 +29,7 @@ class GoogleCloudGatewayMockServerTest {
         mockServer = ClientAndServer.startClientAndServer(8888);
     }
 
-    @AfterClass
+    @AfterAll
     public static void stopServer() {
         mockServer.stop();
     }
