@@ -5,12 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
-public class TestController {
-
+@RequestMapping("/fallback")
+public class FallbackController {
 
     @GetMapping
     public String get() {
-        return "Hello World!";
+        return "Fallback!";
     }
 }
